@@ -1,5 +1,6 @@
 package com.robot.maker.git;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
@@ -24,6 +25,8 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View view) {
                 Snackbar.make(view, "Comprovacion", Snackbar.LENGTH_LONG)
                         .setAction("Action", null).show();
+                Intent i = new Intent(MainActivity.this,Main2Activity.class);
+                startActivity(i);
             }
         });
     }
